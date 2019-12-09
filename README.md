@@ -14,20 +14,20 @@
 Чтобы он заработал, нужно его добавить в конфиг  /config/config.php
 
 'modules' => [
-        'admin' => [
-            // Если controller не установлен, то
-            // будем искакать деф.контроллер app\modules\admin\WebController
-            //'controller' => 'Hello',
-            //'action' => 'blaBlaBla',
-        ],
+        'admin' => [],
     ],
 
 ===============================================
+
 6. mvc построена по следующему принцыпу :
     site _
+    
           |___ controllers - входят все контроллеры
+          
           |___ models - модели проекта
+          
           |___ views - шаблоны проекта
+          
 
     При создании контроллера - TestController и метода внутри - helloWorld()
     Ссылка будет строиться http://my.site.com/test/hello-world
@@ -36,10 +36,15 @@
     Дальше, создаем файл /site/views/test/hello-world.php
 
     Файл подключеяется в контроллере с помощью метода $this->render('hello-world');
+    
 ----------------------------------------------------
+    
     В модулях все аналогично, только после домена сначала будет ити название модуля
     http://my.site.com/admin/posts/index
     admin - Модуль
     posts - Контроллер
     index - Метод (action)
 
+----------------------------------------------------
+login :admin@mail.com
+pass : 12344321
