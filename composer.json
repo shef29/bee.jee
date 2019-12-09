@@ -1,0 +1,25 @@
+{
+  "name": "valter",
+  "description": "test mvc",
+  "type": "no",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pento",
+      "email": "pentowagner@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.1",
+    "php-activerecord/php-activerecord": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": ""
+    },
+    "files": [
+      "simpleDebug.php"
+    ]
+  }
+}
